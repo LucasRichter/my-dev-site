@@ -7,7 +7,12 @@ import Lottie from 'react-lottie'
 import Image from 'next/image'
 import skills from '../../../helpers/skills'
 
-const Skills: React.FC = ({ t, namespacesRequired = ['home'] }) => {
+type Props = {
+  t: (key: string) => string
+  namespacesRequired?: [string]
+}
+
+const Skills: React.FC<Props> = ({ t, namespacesRequired = ['home'] }) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,

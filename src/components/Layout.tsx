@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import Header from './Header'
 import Head from 'next/head'
 
-const Layout: React.FC = ({ title, children }) => {
+type Props = {
+  children?: ReactNode
+  title?: string
+}
+
+const Layout: React.FC<Props> = ({ title, children }) => {
   return (
     <>
       <Head>

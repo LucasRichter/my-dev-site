@@ -6,7 +6,7 @@ import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
 import { appWithTranslation } from '../../i18n'
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />

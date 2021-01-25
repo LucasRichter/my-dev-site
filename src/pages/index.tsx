@@ -8,8 +8,9 @@ import Lottie from 'react-lottie'
 import Developer from '../lottie/developer.json'
 import Layout from '../components/Layout'
 import Skills from '../components/pages/Home/Skills'
+import { NextPage } from 'next'
 
-const Home: React.FC = ({ t }) => {
+const Home: NextPage<any> = ({ t }) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -32,6 +33,7 @@ const Home: React.FC = ({ t }) => {
             {t('title')}
 
             <Typewriter
+              onInit={() => {}}
               options={{
                 strings: t('words', { returnObjects: true }),
                 autoStart: true,

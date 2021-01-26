@@ -22,7 +22,7 @@ const Contact: React.FC<Props> = ({ t, namespacesRequired = ['home'] }) => {
     }
   }
   return (
-    <AnimatedBox bg="white">
+    <AnimatedBox id="contact" bg="white">
       <Flex
         flexDirection={['column', 'column', 'row']}
         justifyContent="center"

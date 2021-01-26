@@ -11,6 +11,7 @@ const Footer: React.FC = () => {
       alignItems="center"
       justifyContent="center"
       width={1}
+      bg="#153956"
       as="footer"
       css={{ borderTop: '2px solid #89d6fb' }}
     >

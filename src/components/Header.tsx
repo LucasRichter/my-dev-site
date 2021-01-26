@@ -10,6 +10,7 @@ const Header: React.FC = () => {
       }}
       px={[4, 4, 6]}
       py={4}
+      bg="#153956"
       width={1}
       as="header"
     >

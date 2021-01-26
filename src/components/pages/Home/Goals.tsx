@@ -29,7 +29,7 @@ const Goals: React.FC<any> = ({ t, namespacesRequired = ['home'] }) => {
       px={[4, 4, 6]}
       py={6}
       width={1}
-      bg="white"
+      id="goals"
       css={{ position: 'relative' }}
     >
       <Heading level={2}>{t('goalsTitle')}</Heading>

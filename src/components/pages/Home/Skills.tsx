@@ -20,7 +20,7 @@ const Skills: React.FC<Props> = ({ t, namespacesRequired = ['home'] }) => {
       alignItems="center"
       px={[4, 4, 6]}
       pb={7}
-      bg="white"
+      id="skills"
       width={1}
       textAlign="center"
     >

@@ -9,8 +9,8 @@ export default createGlobalStyle`
   }
 
   html {
-    background-color: #153956;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   #__next {

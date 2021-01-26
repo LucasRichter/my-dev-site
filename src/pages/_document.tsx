@@ -120,7 +120,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Work+Sans:wght@400;600&display=swap"
             rel="preload"
             as="style"
-            onLoad="this.rel='stylesheet'"
           />
         </Head>
         <body>

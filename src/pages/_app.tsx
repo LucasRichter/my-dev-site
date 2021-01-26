@@ -15,8 +15,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   )
 }
 
-MyApp.getInitialProps = async appContext => ({
-  ...(await App.getInitialProps(appContext))
-})
-
 export default appWithTranslation(MyApp)

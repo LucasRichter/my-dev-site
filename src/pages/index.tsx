@@ -12,7 +12,7 @@ import { NextPage } from 'next'
 import Goals from '../components/pages/Home/Goals'
 import Contact from '../components/pages/Home/Contact'
 
-const Home: NextPage<any> = ({ t }) => {
+const Home: NextPage<any> = ({ t, namespacesRequired: ['home'] }) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -76,9 +76,5 @@ const Home: NextPage<any> = ({ t }) => {
     </Layout>
   )
 }
-
-Home.getInitialProps = async () => ({
-  namespacesRequired: ['home']
-})
 
 export default withTranslation('home')(Home)

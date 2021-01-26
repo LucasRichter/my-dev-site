@@ -118,7 +118,9 @@ export default class MyDocument extends Document {
           <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" />
           <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Work+Sans:wght@400;600&display=swap"
-            rel="stylesheet"
+            rel="preload"
+            as="style"
+            onLoad="this.rel='stylesheet'"
           />
         </Head>
         <body>

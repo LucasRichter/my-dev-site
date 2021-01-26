@@ -12,8 +12,7 @@ const Goals: React.FC<any> = ({ t, namespacesRequired = ['home'] }) => {
   const [spy, setSpy] = useState(undefined)
 
   useEffect(() => {
-    setInterval(() => setSpy(Math.floor(Math.random() * 5)), 4000)
-    setInterval(() => setSpy(undefined), 2000)
+    setInterval(() => setSpy(Math.floor(Math.random() * 5)), 3000)
   }, [])
   const defaultOptions = {
     loop: true,

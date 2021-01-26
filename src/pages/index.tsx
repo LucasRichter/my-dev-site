@@ -18,7 +18,8 @@ const Home: NextPage<any> = ({ t }) => {
     autoplay: true,
     animationData: Developer,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
+      preserveAspectRatio: 'xMidYMid slice',
+      progressiveLoad: true
     }
   }
   return (

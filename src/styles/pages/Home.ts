@@ -30,12 +30,12 @@ export const GoalCard = styled(Box)`
 export const UnknownBox = styled(Box)`
   transition: all 0.365s ease-in-out;
   :hover {
-    transform: translateX(50px);
+    transform: translateX(60%);
   }
 
   ${p =>
     p.spy &&
     css`
-      transform: translateX(50px);
+      transform: translateX(60%);
     `}
 `

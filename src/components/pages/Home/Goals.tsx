@@ -30,7 +30,7 @@ const Goals: React.FC<any> = ({ t, namespacesRequired = ['home'] }) => {
       py={6}
       width={1}
       id="goals"
-      css={{ position: 'relative' }}
+      css={{ position: 'relative', overflowX: 'hidden' }}
     >
       <Heading level={2}>{t('goalsTitle')}</Heading>
       <Flex

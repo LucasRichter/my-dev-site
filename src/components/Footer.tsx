@@ -1,7 +1,7 @@
 import React from 'react'
 import { Heading } from 'styled-typography'
-import { Box, Flex } from '@rebass/grid'
-import { Linkedin, GitHub } from 'react-feather'
+import { Flex } from '@rebass/grid'
+
 const Footer: React.FC = () => {
   return (
     <Flex

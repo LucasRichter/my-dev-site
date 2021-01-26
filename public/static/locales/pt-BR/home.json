@@ -3,9 +3,22 @@
   "subtitle": "Programador front-end, focado em entregar projetos de acordo com suas especificações. 'Isso não pode ser feito' não está no meu vocabulário.",
   "words": ["desenvolvedor web.", "pragmático.", "completo."],
   "button": "Entre em contato",
-  "skillsTitle": "Minhas habilidades",
-  "skills": {
-    "responsive": "Sites responsivos",
-    "performance": "Performance"
-  }
+  "skillsTitle": "Expert nas linguagens mais populares do mundo.",
+  "goalsTitle": "Cuidando de tudo pra você!",
+  "goals": {
+    "responsive": {
+      "title": "Responsividade",
+      "subTitle": "Qualquer dispositivo conseguirá ver renderizar perfeitamente seu site."
+    },
+    "performance": {
+      "title": "Performance",
+      "subTitle": "Todo o cuidado para desenvolver com as tecnologias mais avançadas para que seu site carregue ao piscar os olhos."
+    },
+    "seo": {
+      "title": "SEO",
+      "subTitle": "Do que adianta um site bonito, responsivo se ninguém te achar? Utilizo as melhores técnicas de SEO para o seu site aparecer pra qualquer um!"
+    }
+  },
+  "contactTitle": "Entre em contato!",
+  "contactSubtitle": "Gostou do que viu? Me mande uma mensagem através das minhas redes sociais."
 }

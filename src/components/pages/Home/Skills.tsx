@@ -1,11 +1,11 @@
 import React from 'react'
 import { Flex, Box } from '@rebass/grid'
-import { Heading, Text } from 'styled-typography'
+import { Heading } from 'styled-typography'
 import { withTranslation } from '../../../../i18n'
-import animationData from '../../../lottie/skills.json'
-import Lottie from 'react-lottie'
 import Image from 'next/image'
 import skills from '../../../helpers/skills'
+import AnimatedBox from '../../AnimationBox'
+import { LogoBox } from '../../../styles/pages/Home'
 
 type Props = {
   t: (key: string) => string
@@ -13,47 +13,30 @@ type Props = {
 }
 
 const Skills: React.FC<Props> = ({ t, namespacesRequired = ['home'] }) => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
   return (
-    <Flex
-      flexDirection={['column', 'column', 'row-reverse']}
-      justifyContent="space-between"
+    <AnimatedBox
+      flexDirection="column"
+      justifyContent="center"
       alignItems="center"
-      px={6}
-      py={4}
+      px={[4, 4, 6]}
+      pb={7}
+      bg="white"
       width={1}
+      textAlign="center"
     >
-      <Box flex="0 47%">
-        <Heading level={2}>{t('skillsTitle')}</Heading>
-
-        <Box py={4}>
-          <Text>{t('skillsSubtitle')}</Text>
-        </Box>
-
-        <Flex justifyContent="space-between">
-          {skills.map(s => (
-            <Box css={{ position: 'relative' }} key={s}>
-              <Image
-                src={`/static/assets/logos/${s}.png`}
-                width={64}
-                height={64}
-              />
-            </Box>
-          ))}
-        </Flex>
-      </Box>
-
-      <Box flex="0 47%">
-        <Lottie options={defaultOptions} />
-      </Box>
-    </Flex>
+      <Heading level={2}>{t('skillsTitle')}</Heading>
+      <Flex width={1} pt={5} justifyContent="space-between">
+        {skills.map(s => (
+          <LogoBox css={{ position: 'relative' }} key={s}>
+            <Image
+              src={`/static/assets/logos/${s}.png`}
+              width={128}
+              height={128}
+            />
+          </LogoBox>
+        ))}
+      </Flex>
+    </AnimatedBox>
   )
 }
 

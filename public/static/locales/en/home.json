@@ -3,6 +3,22 @@
   "subtitle": "I'm a pragmatic front-end engineer, zealous to deliver projects as their specifications. 'This can't be done' is not on my vocabulary.",
   "words": ["web developer.", "full stack.", "everything!"],
   "button": "Get in touch",
-  "skillsTitle": "Extensive knowledge in the most current technologies in the market.",
-  "skillsSubtitle": "Responsive, fast sites, using cutting-edge technologies, with specialized SEO are some of my skills. Did you like it? Let's chat!"
+  "skillsTitle": "Expert in the most popular languages in the world.",
+  "goalsTitle": "Everything to your website!",
+  "goals": {
+    "responsive": {
+      "title": "Layout Responsive",
+      "subTitle": "Your website will looks like perfect in any device!"
+    },
+    "performance": {
+      "title": "Performance",
+      "subTitle": "Be careful to develop with the most advanced technologies so that your website loads when you blink your eyes."
+    },
+    "seo": {
+      "title": "SEO",
+      "subTitle": "What's the use of a beautiful, responsive site if nobody finds you? I use the best SEO techniques for your website to appear to anyone!"
+    }
+  },
+  "contactTitle": "Get in touch!",
+  "contactSubtitle": "Did you like what you see? Send me a message in my social medias!"
 }

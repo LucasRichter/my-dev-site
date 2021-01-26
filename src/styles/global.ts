@@ -9,5 +9,11 @@ export default createGlobalStyle`
 
   html {
     background-color: #153956;
+    overflow-x: hidden;
+  }
+
+  #__next {
+    max-width: 1399px;
+    margin: 0 auto;
   }
 `

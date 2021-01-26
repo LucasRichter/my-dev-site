@@ -1,1 +1,1 @@
-export default ['html', 'css', 'node', 'reactjs', 'aws']
+export default ['css', 'html', 'javascript', 'python', 'reactjs', 'typescript']

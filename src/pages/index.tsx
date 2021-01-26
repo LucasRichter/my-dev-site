@@ -9,6 +9,8 @@ import Developer from '../lottie/developer.json'
 import Layout from '../components/Layout'
 import Skills from '../components/pages/Home/Skills'
 import { NextPage } from 'next'
+import Goals from '../components/pages/Home/Goals'
+import Contact from '../components/pages/Home/Contact'
 
 const Home: NextPage<any> = ({ t }) => {
   const defaultOptions = {
@@ -25,10 +27,11 @@ const Home: NextPage<any> = ({ t }) => {
         width={1}
         flexDirection={['column', 'column', 'row']}
         justifyContent="space-between"
-        px={6}
+        px={[4, 4, 6]}
+        bg="#153956"
         alignItems="center"
       >
-        <Box flex="0 47%">
+        <Box css={{ zIndex: 9 }} flex="0 47%">
           <Heading level={1}>
             {t('title')}
 
@@ -42,7 +45,7 @@ const Home: NextPage<any> = ({ t }) => {
             />
           </Heading>
 
-          <Box width={[1, 1, 580]} py={4}>
+          <Box py={4}>
             <Text>{t('subtitle')}</Text>
           </Box>
 
@@ -58,14 +61,17 @@ const Home: NextPage<any> = ({ t }) => {
         </Box>
       </Flex>
       <Box
-        css={{ pointerEvents: 'none' }}
+        css={{ pointerEvents: 'none', zIndex: -1 }}
         as="img"
+        bg="#153956"
         src="/static/assets/images/wave.svg"
         width={1}
-        mt={-192}
+        mt={-132}
       />
 
+      <Goals />
       <Skills />
+      <Contact />
     </Layout>
   )
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 
-export default function useKonamiCode(targetKey) {
+export default function useKonamiCode() {
   // State for keeping track of konami state
   const [konamiCode, setIsKonami] = useState(false)
 

@@ -51,6 +51,7 @@ const Contact: React.FC<Props> = ({ t, namespacesRequired = ['home'] }) => {
               as="a"
               mr={3}
               target="_blank"
+              aria-label="Linkedin"
               rel="noreferrer"
               href="https://www.linkedin.com/in/lucasrichtergonzaga/"
             >
@@ -58,6 +59,7 @@ const Contact: React.FC<Props> = ({ t, namespacesRequired = ['home'] }) => {
             </Box>
             <a
               target="_blank"
+              aria-label="Github"
               rel="noreferrer"
               href="https://github.com/LucasRichter"
             >

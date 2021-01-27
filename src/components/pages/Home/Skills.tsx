@@ -29,6 +29,7 @@ const Skills: React.FC<Props> = ({ t, namespacesRequired = ['home'] }) => {
         {skills.map(s => (
           <LogoBox css={{ position: 'relative' }} key={s}>
             <Image
+              alt={s}
               src={`/static/assets/logos/${s}.png`}
               width={128}
               height={128}

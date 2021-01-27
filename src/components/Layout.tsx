@@ -6,12 +6,14 @@ import Footer from './Footer'
 type Props = {
   children?: ReactNode
   title?: string
+  description?: string
 }
 
-const Layout: React.FC<Props> = ({ title, children }) => {
+const Layout: React.FC<Props> = ({ title, children, description }) => {
   return (
     <>
       <Head>
+        <meta name="description" content={description} />
         <title>{title}</title>
       </Head>
       <Header />

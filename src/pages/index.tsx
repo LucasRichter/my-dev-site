@@ -12,7 +12,7 @@ import { NextPage } from 'next'
 import Goals from '../components/pages/Home/Goals'
 import Contact from '../components/pages/Home/Contact'
 
-const Home: NextPage<any> = ({ t, namespacesRequired: ['home'] }) => {
+const Home: NextPage<any> = ({ t, namespacesRequired = ['home'] }) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -23,7 +23,7 @@ const Home: NextPage<any> = ({ t, namespacesRequired: ['home'] }) => {
     }
   }
   return (
-    <Layout title="Lucas Richter - Developer">
+    <Layout title="Lucas Richter - Developer" description={t('subtitle')}>
       <Flex
         width={1}
         flexDirection={['column', 'column', 'row']}
@@ -65,6 +65,7 @@ const Home: NextPage<any> = ({ t, namespacesRequired: ['home'] }) => {
         css={{ pointerEvents: 'none', zIndex: -1 }}
         as="img"
         bg="#153956"
+        alg="Wave"
         src="/static/assets/images/wave.svg"
         width={1}
         mt={-132}

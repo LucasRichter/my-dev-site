@@ -6,14 +6,17 @@ import AnimatedBox from '../../AnimationBox'
 import { GoalCard, UnknownBox } from '../../../styles/pages/Home'
 import Lottie from 'react-lottie'
 import Image from 'next/image'
+import useKonamiCode from '../../../hooks/useKonamiCode'
 
 const Goals: React.FC<any> = ({ t, namespacesRequired = ['home'] }) => {
   const goals = t('goals', { returnObjects: true })
   const [spy, setSpy] = useState(undefined)
+  const [konamiCode] = useKonamiCode()
 
   useEffect(() => {
-    setInterval(() => setSpy(Math.floor(Math.random() * 5)), 3000)
+    setInterval(() => setSpy(Math.floor(Math.random() * 5)), 5000)
   }, [])
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -63,24 +66,19 @@ const Goals: React.FC<any> = ({ t, namespacesRequired = ['home'] }) => {
         ))}
       </Flex>
       {'lucas'.split('').map((c, index) => (
-        <Box
+        <UnknownBox
+          konami={konamiCode}
           key={c}
-          css={{
-            position: 'absolute',
-            transform: index % 2 === 0 ? 'rotate(-30deg)' : 'rotate(30deg)',
-            top: `${20 * index}%`,
-            left: index % 2 === 0 ? '-100px' : 'unset',
-            right: index % 2 !== 0 ? '-100px' : 'unset'
-          }}
+          index={index}
+          spy={spy === index && !konamiCode}
         >
-          <UnknownBox spy={spy === index}>
-            <Image
-              width="100px"
-              height="100px"
-              src={`/static/assets/unknows/${c}.png`}
-            />
-          </UnknownBox>
-        </Box>
+          <Image
+            width="100px"
+            height="100px"
+            alt={`Unknown ${c}`}
+            src={`/static/assets/unknows/${c}.png`}
+          />
+        </UnknownBox>
       ))}
     </AnimatedBox>
   )

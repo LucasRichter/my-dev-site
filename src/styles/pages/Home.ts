@@ -28,14 +28,25 @@ export const GoalCard = styled(Box)`
 `
 
 export const UnknownBox = styled(Box)`
-  transition: all 0.365s ease-in-out;
-  :hover {
-    transform: translateX(60%);
-  }
+  position: absolute;
+  transform: ${p => (p.index % 2 === 0 ? 'rotate(-30deg)' : 'rotate(30deg)')};
+  top: ${p => p.index * 20}%;
+  left: ${p => (p.index % 2 === 0 ? '-100px' : 'unset')};
+  right: ${p => (p.index % 2 !== 0 ? '-100px' : 'unset')};
+  transition: all 0.9s ease-in-out;
+
+  ${p =>
+    p.konami &&
+    css`
+      top: 50%;
+      left: calc(38% + ${p.index * 120}px);
+      transform: translate(-100%, -100%);
+      right: unset;
+    `}
 
   ${p =>
     p.spy &&
     css`
-      transform: translateX(60%);
+      transform: translateX(${p.index % 2 === 0 ? 50 : -50}%);
     `}
 `

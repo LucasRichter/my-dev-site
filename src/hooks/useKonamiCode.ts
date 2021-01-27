@@ -39,6 +39,8 @@ export default function useKonamiCode(targetKey) {
 
   // Add event listeners
   useEffect(() => {
+    console.log('KONAMI CODE')
+    console.log('↑ ↑ ↓ ↓ ← → ← → B A')
     window.addEventListener('keyup', onKeyUpCallback)
     return () => {
       window.removeEventListener('keyup', onKeyUpCallback)

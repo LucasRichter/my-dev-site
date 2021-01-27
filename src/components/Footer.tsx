@@ -15,7 +15,9 @@ const Footer: React.FC = () => {
       as="footer"
       css={{ borderTop: '2px solid #89d6fb' }}
     >
-      <Heading level={4}>© 2021 Lucas Dev</Heading>
+      <Heading displayLevel={4} level={5}>
+        © 2021 Lucas Dev
+      </Heading>
     </Flex>
   )
 }

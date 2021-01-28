@@ -56,13 +56,13 @@ const MainSection: React.FC<any> = ({ t, namespacesRequired = ['home'] }) => {
         </Box>
       </Flex>
       <Box
-        css={{ pointerEvents: 'none', zIndex: -1 }}
+        alg="Wave"
         as="img"
         bg="#153956"
-        alg="Wave"
+        css={{ pointerEvents: 'none', zIndex: -1 }}
+        mt={-132}
         src="/static/assets/images/wave.svg"
         width={1}
-        mt={-132}
       />
     </Box>
   )

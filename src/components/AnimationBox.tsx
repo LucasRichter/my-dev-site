@@ -18,7 +18,7 @@ const Animate = styled(Flex)`
 `
 
 const AnimatedBox: React.FC<any> = props => (
-  <TrackVisibility once partialVisibility>
+  <TrackVisibility tag="section" once partialVisibility>
     {({ isVisible }) => (
       <Animate flexWrap="wrap" {...props} isVisible={isVisible} />
     )}

@@ -115,11 +115,18 @@ export default class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
           <meta name="theme-color" content="#153956"></meta>
-          <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" />
+          <script
+            defer
+            async
+            rel="preload"
+            as="script"
+            src="https://unpkg.com/typewriter-effect@latest/dist/core.js"
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Work+Sans:wght@400;600&display=swap"
             rel="preload"
-            as="style"
+            as="font"
+            crossOrigin
           />
         </Head>
         <body>

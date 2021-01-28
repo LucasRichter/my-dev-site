@@ -123,8 +123,7 @@ export default class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Work+Sans:wght@400;600&display=swap"
             rel="preload"
-            as="font"
-            crossOrigin
+            as="style"
           />
         </Head>
         <body>

@@ -13,8 +13,7 @@ const MainSection: React.FC<any> = ({ t, namespacesRequired = ['home'] }) => {
     autoplay: true,
     animationData: Developer,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-      progressiveLoad: true
+      preserveAspectRatio: 'xMidYMid slice'
     }
   }
   return (

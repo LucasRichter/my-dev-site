@@ -7,12 +7,7 @@ import Developer from '../../../lottie/developer.json'
 import Typewriter from 'typewriter-effect'
 import Button from '../../../styles/Buttons'
 
-type Props = {
-  t: (key: string) => string
-  namespacesRequired?: [string]
-}
-
-const MainSection: React.FC<Props> = ({ t, namespacesRequired = ['home'] }) => {
+const MainSection: React.FC<any> = ({ t, namespacesRequired = ['home'] }) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,

@@ -118,8 +118,6 @@ export default class MyDocument extends Document {
           <script
             defer
             async
-            rel="preload"
-            as="script"
             src="https://unpkg.com/typewriter-effect@latest/dist/core.js"
           />
           <link

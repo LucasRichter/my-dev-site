@@ -6,6 +6,7 @@ import AnimatedBox from '../../AnimationBox'
 import { LogoBox } from '../../../styles/pages/Home'
 import Image from 'next/image'
 import companies from '../../../helpers/companies'
+import { css } from 'styled-components'
 
 const CompanySection: React.FC<any> = ({
   t,

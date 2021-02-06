@@ -17,13 +17,12 @@ const MainSection: React.FC<any> = ({ t, namespacesRequired = ['home'] }) => {
     }
   }
   return (
-    <Box as="section">
+    <Box bg="#153956" as="section">
       <Flex
         width={1}
         flexDirection={['column', 'column', 'row']}
         justifyContent="space-between"
         px={[4, 4, 6]}
-        bg="#153956"
         alignItems="center"
       >
         <Box css={{ zIndex: 9 }} flex={['0 100%', '0 100%', '0 47%']}>
@@ -60,7 +59,8 @@ const MainSection: React.FC<any> = ({ t, namespacesRequired = ['home'] }) => {
         as="img"
         bg="#153956"
         css={{ pointerEvents: 'none', zIndex: -1 }}
-        mt={-132}
+        mt={-180}
+        mb={-10}
         src="/static/assets/images/wave.svg"
         width={1}
       />

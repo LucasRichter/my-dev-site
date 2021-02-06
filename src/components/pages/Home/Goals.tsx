@@ -30,7 +30,8 @@ const Goals: React.FC<any> = ({ t, namespacesRequired = ['home'] }) => {
       justifyContent="center"
       alignItems="center"
       px={[4, 4, 6]}
-      py={6}
+      py={5}
+      pb={6}
       width={1}
       id="goals"
       css={{ position: 'relative', overflowX: 'hidden' }}

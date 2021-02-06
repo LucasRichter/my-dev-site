@@ -4,7 +4,9 @@
   "words": ["desenvolvedor web.", "pragmático.", "completo."],
   "button": "Entre em contato",
   "skillsTitle": "Expert nas linguagens mais populares do mundo.",
+  "skillsText": "Construo sites com as tecnologias mais recentes, como: <b>Javascript</b>, <b>HTML5</b>, <b>SASS</b>, <b>ReactJS</b>, <b>Typescript</b> e mais!",
   "goalsTitle": "Cuidando de tudo pra você!",
+  "companyTitle": "Empresas que tive o prazer de construir grandes projetos.",
   "goals": {
     "responsive": {
       "title": "Responsividade",

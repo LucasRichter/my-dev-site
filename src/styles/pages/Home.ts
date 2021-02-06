@@ -13,6 +13,7 @@ export const LogoBox = styled(Box)`
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  filter: grayscale(1);
 `
 
 export const GoalCard = styled(Box)`

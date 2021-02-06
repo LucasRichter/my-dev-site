@@ -26,7 +26,7 @@ const Contact: React.FC<Props> = ({ t, namespacesRequired = ['home'] }) => {
       <Flex
         flexDirection={['column', 'column', 'row']}
         justifyContent="center"
-        mt={-90}
+        mt={-40}
         alignItems="center"
         mx={[4, 4, 6]}
         bg="#153956"

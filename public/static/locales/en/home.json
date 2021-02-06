@@ -4,7 +4,9 @@
   "words": ["web developer.", "full stack.", "everything!"],
   "button": "Get in touch",
   "skillsTitle": "Expert in the most popular languages in the world.",
+  "skillsText": "I build website with the most recent technologies, like: <b>Javascript</b>, <b>HTML5</b>, <b>SASS</b>, <b>ReactJS</b>, <b>Typescript</b> and more!",
   "goalsTitle": "Everything to your website!",
+  "companyTitle": "Companies that I had the pleasure of building great projects.",
   "goals": {
     "responsive": {
       "title": "Layout Responsive",

@@ -29,10 +29,16 @@ const CompanySection: React.FC<any> = ({
         <Text fontWeight={FontWeight.SemiBold} displayLevel={4}>
           {t('companyTitle')}
         </Text>
-        <Flex width={1} pt={3} justifyContent="space-between">
+        <Flex
+          flexDirection={['column', 'column', 'row']}
+          width={1}
+          pt={3}
+          justifyContent="space-between"
+        >
           {companies.map(c => (
             <LogoBox
               as="a"
+              mb={[20, 20, 0]}
               flex="1 0 auto"
               href={c.link}
               textAlign="center"

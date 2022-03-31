@@ -7,7 +7,6 @@
   },
   "extends": [
     "plugin:react/recommended",
-    "standard",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
     "prettier/standard",
@@ -27,8 +26,9 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
     "space-before-function-paren": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "indent": "off",
+    "@typescript-eslint/indent": ["error", 2]
   }
 }

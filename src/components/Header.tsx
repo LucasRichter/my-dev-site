@@ -15,6 +15,7 @@ const Header: React.FC = () => {
       as="header"
     >
       <Heading level={3}>{'<LucasDev>'}</Heading>
+      <Heading as="a" level={3} href="https//blog.richterlucas.dev">Blog</Heading>
     </Flex>
   )
 }

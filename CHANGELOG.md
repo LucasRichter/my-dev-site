@@ -7,11 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.1.0] - 2023-02-21
+## [1.0.1] - 2023-02-21
+
+### Added
+
+- README.md
+- CHANGELOG.md
+
+## [1.0.0] - 2023-02-21
 
 ### Added
 
 - First configuration
-- README.md
-- CHANGELOG.md
-

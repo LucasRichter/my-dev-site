@@ -2,11 +2,11 @@ import { FontWeight } from 'styled-typography'
 
 const typographyTheme = {
   fontSizes: ['2.375rem', '36px', '22px', '1.375rem', '16px', '12px'],
-  bodyFontFamily: 'Work Sans, LOL, sans-serif',
+  bodyFontFamily: 'Work Sans, sans-serif',
   headingWeight: FontWeight.SemiBold,
   headingColor: '#f2a278',
   bodyColor: '#f5f2e8',
-  headingFontFamily: 'LOL, sans-serif'
+  headingFontFamily: 'Montserrat, sans-serif'
 }
 
 const theme = {
